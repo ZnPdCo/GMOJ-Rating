@@ -4,7 +4,7 @@ var curD = 0;
 var useMedian = false;
 var practiceMode = true;
 
-var lastUpdate = "1-14-2023";
+var lastUpdate = "2024-10-18";
 var lastSeen;
 
 function init() {
