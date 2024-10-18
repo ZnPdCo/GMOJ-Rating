@@ -2,7 +2,7 @@
 	include("mysql_info.php");
 	$pwd = $_GET["password"];
 	if($pwd != PASSWORD2) exit("");
-	$conn = new mysqli("localhost",USERNAME,PASSWORD,"usaco");
+	$conn = new mysqli("localhost",USERNAME,PASSWORD,"gmoj");
 	$file = fopen("problems.txt","r");
 
 	while(!feof($file)) {

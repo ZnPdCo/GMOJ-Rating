@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>USACO Rating - Contribute</title>
+	<title>GMOJ Rating - Contribute</title>
 	<meta charset="UTF-8">
 	<meta name="renderer" content="webkit">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,8 +13,8 @@
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/utility.css">
 
-	<meta name="keywords" content="codetiger,blog,usaco,codeforces,rating,estimator,practice,converter,contribute">
-	<meta name="description" content="A tool to estimate the difficulties of USACO problems in terms of CodeForces rating.">
+	<meta name="keywords" content="gmoj,codeforces,rating,estimator,practice,converter,contribute">
+	<meta name="description" content="A tool to estimate the difficulties of GMOJ problems in terms of CodeForces rating.">
 	<meta name="Author" content="CodeTiger">
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
 
 <body>
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="mb-0 h1 navbar-brand active" href="../">USACO Rating</a>
+		<a class="mb-0 h1 navbar-brand active" href="../">GMOJ Rating</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -50,10 +50,9 @@
 			Links
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="http://usaco.org/">USACO</a>
-				<a class="dropdown-item" href="https://github.com/CodeTiger927/USACO-Rating">GitHub</a>
+				<a class="dropdown-item" href="https://gmoj.net/">GMOJ</a>
+				<a class="dropdown-item" href="https://github.com/ZnPdCo/GMOJ-Rating">GitHub</a>
 				<a class="dropdown-item" href="https://codetiger.me/">CodeTiger</a>
-				<a class="dropdown-item" href="https://usaco.guide/">USACO Guide</a>
 			</div>
 			</li>
 			</ul>
@@ -65,16 +64,16 @@
 		<hr style="margin-bottom: 40px;">
 		<h4>Identify bugs/give suggestions</h4>
 		<hr>
-		<p>Create an issue on our <a href="https://github.com/CodeTiger927/USACO-Rating">GitHub</a> issues page. We appreciate any form of feedback/suggestions.</p><br>
+		<p>Create an issue on our <a href="https://github.com/ZnPdCo/GMOJ-Rating">GitHub</a> issues page. We appreciate any form of feedback/suggestions.</p><br>
 		<h4>Directly improve our code</h4>
 		<hr>
-		<p>This is an open-source project, therefore you can directly help us by creating <a href="https://github.com/CodeTiger927/USACO-Rating/pulls">pull requests</a> and improve the code to make it faster/eliminate bugs! This is again on our GitHub page.</p><br>
-		<h4>Vote on the USACO problems</h4>
+		<p>This is an open-source project, therefore you can directly help us by creating <a href="https://github.com/ZnPdCo/GMOJ-Rating/pulls">pull requests</a> and improve the code to make it faster/eliminate bugs! This is again on our GitHub page.</p><br>
+		<h4>Vote on the GMOJ problems</h4>
 		<hr>
 		<p>Love that enthusiasm! However, we are slightly strict on who are "qualified" to vote, as we want to maintain maximum quality. Since this project estimates difficulties in terms of CodeForce rating, we do require voters to be experienced at CF.</p>
-		<p>If you have a rating of <b>1900+</b>, you are definitely qualified by our standards! We encourage you to use the <b>automatic registration system</b> below! If your rating is below 1900 but still feel like you are qualified, please read the next section.<br></p>
+		<p>If you have a rating of <b>0+</b>, you are definitely qualified by our standards! We encourage you to use the <b>automatic registration system</b> below! If your rating is below 0 but still feel like you are qualified, please read the next section.<br></p>
 		<div class="alert alert-warning">
-			<b><i>Do This First</i>:</b> Change your first name in CodeForces (temporarily) <a href="https://codeforces.com/settings/social" target="_blank">HERE</a> to "<b>USACO-Rating-verify</b>" before registering.
+			<b><i>Do This First</i>:</b> Change your first name in CodeForces (temporarily) <a href="https://codeforces.com/settings/social" target="_blank">HERE</a> to "<b>GMOJ-Rating-verify</b>" before registering.
 		</div>
 		<div id="status"></div>
 		<br>
@@ -87,13 +86,6 @@
 			<br>
 			<button type="submit" class="btn btn-primary" onclick="register();">Register</button>
 		</div>
-		<hr>
-		<h4>Manual Review Form</h4>
-		<p>You don't necessarily need 1900+ if you intend to vote on lower divisions. For example, a 1500 for silver might suffice given the right circumstances. We manually review each application, so there is leniency and other factors (such as CF solve count). In any case, fill out the Google Form below (if the form doesn't work, click <a href="https://forms.gle/XgoFShucMsJ5jA8t7">here</a>), and we will message you the invitation links <b>through CodeForces</b>. Alternatively you can directly contact me from the <a href="./about.html">About</a> page.</p></p>
-
-		<div style="width: 100%;text-align: center;">
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQQ77ZAz7_Ohy5GUgALy8BEAPB9Ko95CIk5o7xJcOFM2Gvxg/viewform?embedded=true" width="800" height="1724" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		</div>
 	</div>
 
 	<div class="modal fade" id="statusUpdate" tabindex="-1" role="dialog" aria-hidden="true">
@@ -103,7 +95,7 @@
 					<h4 class="modal-title" id="announcementTitles">YOU ARE IN!!!</h4>
 				</div>
 				<div class="modal-body">
-					<p>Thank you for volunteering to help vote on USACO Rating! Before I give you the invite link, here is a few tips:</p>
+					<p>Thank you for volunteering to help vote on GMOJ Rating! Before I give you the invite link, here is a few tips:</p>
 					<ol>
 						<li>Remember to click the "<b>Save Votes</b>" button at the bottom of the page. Also it takes a few seconds to save, so don't worry if the website is taking longer than expected.</li>
 						<li> The votes <b>do not automatically save when you switch between divisions</b>. So be careful not to click on another tab before you save your votes.</li>

@@ -1,7 +1,7 @@
 <?php
 	// Sensitive information about the database
 	include("mysql_info.php");
-	$conn = new mysqli("localhost",USERNAME,PASSWORD,"usaco");
+	$conn = new mysqli("localhost",USERNAME,PASSWORD,"gmoj");
 
 	$type = $_POST['type'];
 	if($type == 1) {
@@ -139,18 +139,18 @@
 		$firstName = $CFUsers -> firstName;
 		$rating = $CFUsers -> rating;
 
-		// 1900 Threshold
-		if($rating < 1900) {
+		// 0 Threshold
+		if($rating < 0) {
 			$data["success"] = -2;
-			$data["message"] = "The codeforces account's rating does not meet the 1900 threshold. If you believe you are still qualified, please fill out the manual review form.";
+			$data["message"] = "The codeforces account's rating does not meet the 0 threshold. If you believe you are still qualified, please fill out the manual review form.";
 			header('Content-type:application/json;charset=utf-8');
 			echo json_encode($data);
 			exit("");
 		}
 
-		if(trim($firstName) != "USACO-Rating-verify") {
+		if(trim($firstName) != "GMOJ-Rating-verify") {
 			$data["success"] = -3;
-			$data["message"] = "The codeforces account's first name is not 'USACO-Rating-verify'";
+			$data["message"] = "The codeforces account's first name is not 'GMOJ-Rating-verify'";
 			header('Content-type:application/json;charset=utf-8');
 			echo json_encode($data);
 			exit("");
@@ -209,9 +209,9 @@
 		$CFUsers = $CFUsers[0];
 		$firstName = $CFUsers -> firstName;
 
-		if(trim($firstName) != "USACO-Rating-verify") {
+		if(trim($firstName) != "GMOJ-Rating-verify") {
 			$data["success"] = -3;
-			$data["message"] = "The codeforces account's first name is not 'USACO-Rating-verify'";
+			$data["message"] = "The codeforces account's first name is not 'GMOJ-Rating-verify'";
 			header('Content-type:application/json;charset=utf-8');
 			echo json_encode($data);
 			exit("");

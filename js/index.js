@@ -36,7 +36,7 @@ function rating2Str(rating,cnt) {
 		res += 'color: red;';
 	}else if(rating >= 2100) {
 		res += 'color: rgb(255,140,0);';
-	}else if(rating >= 1900) {
+	}else if(rating >= 0) {
 		res += 'color: rgb(170,0,170);';
 	}else if(rating >= 1600) {
 		res += 'color: blue;';
@@ -62,9 +62,9 @@ function rating2Circle(rating) {
 	}else if(rating >= 2100) {
 		col += 'rgb(255,140,0)';
 		percentage = (rating - 2100) / 3;
-	}else if(rating >= 1900) {
+	}else if(rating >= 0) {
 		col += 'rgb(170,0,170)';
-		percentage = (rating - 1900) / 2;
+		percentage = (rating - 0) / 2;
 	}else if(rating >= 1600) {
 		col += 'blue';
 		percentage = (rating - 1600) / 3;
