@@ -124,8 +124,8 @@
 				if(data["status"] == 1) {
 					// Yay success
 					var id = data["id"];
-					$("#uniqueLink").attr("href","https://codetiger.me/project/usaco/frontend/vote.html?id=" + id);
-					$("#uniqueLink").text("https://codetiger.me/project/usaco/frontend/vote.html?id=" + id);
+					$("#uniqueLink").attr("href","/frontend/vote.html?id=" + id);
+					$("#uniqueLink").text("/frontend/vote.html?id=" + id);
 					$("#statusUpdate").modal("show");
 				}else{
 					// Some error

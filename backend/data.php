@@ -102,6 +102,7 @@
 		}
 		recalculateEverything($conn);
 		$data["status"] = 1;
+		$data["debug"] = count($votes[0]);
 		header('Content-type:application/json;charset=utf-8');
 		echo json_encode($data);
 	}else if($type == 5) {
@@ -248,6 +249,7 @@
 		$stmt -> close();
 		if($res -> num_rows == 0) {
 			if($rating == -1) return;
+			file_put_contents("debug.txt", $uid . " " . $pid . " " . $res -> num_rows . "\n", FILE_APPEND);
 			$stmt = $conn -> prepare("INSERT INTO rating (id,pid,val) VALUES (?,?,?)");
 			$stmt -> bind_param("sid",$uid,$pid,$rating);
 			$stmt -> execute();

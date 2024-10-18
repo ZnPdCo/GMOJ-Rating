@@ -48,6 +48,34 @@ function displayVotes() {
 }
 
 function saveVotes() {
+	copyOverCookies();
+	
+	var id = getUrlParameter("id");
+	if(!id) {
+		id = readRecord("uid");
+	}
+	if(!id) {
+		alert("D: You need to use your invite link at least once first to activate this page.");
+		window.location.replace("./recovery.html");
+	}else{
+		writeRecord("uid",id,365);
+		$.post("../backend/data.php",{"type": 2,"id": id},function(res) {
+			if(res[0] == -1) {
+				alert("Your invite link is invalid >.<");
+				window.location.replace("../");
+			}
+			udata = res[0];
+			urating = res[1];
+			uquality = res[2];
+			window.setTimeout(function(){displayVotes();addName();},300);
+		});
+	}
+
+	$.post("../backend/data.php",{"type": 1},function(res) {
+		data = res;
+		sortProblems();
+	});
+
 	var rating = [];
 	var quality = [];
 	for(var i = 1;i <= data.length;++i) {
