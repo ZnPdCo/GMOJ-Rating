@@ -62,18 +62,17 @@
 	<div class="main-container" style="margin-left: 10%;width: 80%;margin-right: 10%;">
 		<h4>欢迎给 GMOJ 题目打分</h4>
 		<hr>
-		<p>喜欢这种热情！然而，我们对谁“有资格”投票有点严格，因为我们希望保持最高的质量。由于该项目估计了CodeForce评级方面的困难，我们确实要求选民在CF有经验。</p>
-		<p>如果您的评级为<b>0+</b>，那么您绝对符合我们的标准！我们建议您使用下面的<b>自动注册系统</b>！<br></p>
+		<p>喜欢这种热情！请在下面填入您的 GMOJ 用户名<br></p>
 		<div class="alert alert-warning">
-			<b><i>先做这个</i>:</b> 在CodeForces中更改您的 First Name 为（暂时地） <a href="https://codeforces.com/settings/social" target="_blank">HERE</a> to "<b>GMOJ-Rating-verify</b>" 在注册之前。
+			<b><i>注意：</i></b> 在注册之前，请在 GMOJ 中暂时在您的 Description 开头添加 “<b>GMOJ-Rating-verify</b>”（不需要也不应该添加任何前缀）以验证您的身份。
 		</div>
 		<div id="status"></div>
 		<br>
 		<div class="grayContainer" style="font-size: 21px;">
-			<label for="username"><b>CodeForces Handle</b></label>
-			<input required type="text" class="form-control" id="username" placeholder="Enter CodeForces Handle">
+			<label for="username"><b>GMOJ 用户名</b></label>
+			<input required type="text" class="form-control" id="username" placeholder="Enter GMOJ Handle">
 			<br>
-			<label for="name"><b>Name (just first name is fine)</b></label>
+			<label for="name"><b>评级系统用户名</b></label>
 			<input required type="text" class="form-control" id="name" placeholder="Enter your name">
 			<br>
 			<button type="submit" class="btn btn-primary" onclick="register();">Register</button>
@@ -84,16 +83,17 @@
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="announcementTitles">YOU ARE IN!!!</h4>
+					<h4 class="modal-title" id="announcementTitles">注册成功！！！</h4>
 				</div>
 				<div class="modal-body">
 					<p>感谢您自愿为GMOJ评级投票！在我给你邀请链接之前，这里有一些提示：</p>
 					<ol>
 						<li>记得点击页面底部的“<b>保存投票</b>”按钮。此外，保存需要几秒钟的时间，所以如果网站的保存时间比预期的要长，也不要担心。</li>
-						<li> 在分区之间切换时，投票<b>不会自动保存</b>。因此，在保存投票之前，请注意不要点击其他选项卡。</li>
+						<li>在分区之间切换时，投票<b>不会自动保存</b>。因此，在保存投票之前，请注意不要点击其他选项卡。</li>
+						<li>记得赶快<b>将 Description 中的验证信息删除</b>！否则别人将可以冒充您！！！！</li>
 					</ol>
 
-					<p>这是您的邀请链接（记住不要与他人共享，因为这样他们就可以冒充您）：<a href="" id="uniqueLink"></a>。请注意，一旦您单击链接，您的登录信息应自动保存在cookie中，您以后可以使用“投票”选项卡。</p>
+					<p>这是您的邀请链接，<b>请点击它以登录</b>（记住不要与他人共享，因为这样他们就可以冒充您）：<a href="" id="uniqueLink"></a>。请注意，一旦您单击链接，您的登录信息应自动保存在cookie中，您以后可以使用“投票”选项卡。</p>
 
 					<p>再次感谢您愿意帮助这个项目！非常感谢<3</p>
 

@@ -125,6 +125,34 @@
 			exit("");
 		}
 
+		// change it to GMOJ check
+		$username = $_POST["username"];
+		$cmd = shell_exec("python check.py " . $username);
+		if($cmd == "Wrong Username\n") {
+			$data["success"] = -1;
+			$data["message"] = "The gmoj account does not exist!";
+			header('Content-type:application/json;charset=utf-8');
+			echo json_encode($data);
+			exit("");
+		}
+
+		if($cmd == "No\n") {
+			$data["success"] = -3;
+			$data["message"] = "The gmoj account's description is not start with 'GMOJ-Rating-verify'";
+			header('Content-type:application/json;charset=utf-8');
+			echo json_encode($data);
+			exit("");
+		}
+
+		if(checkCodeForcesExist($conn,$username)) {
+			$data["success"] = -4;
+			$data["message"] = "You have already registered an account! Contact CodeTiger on discord if you lost your personalized link.";
+			header('Content-type:application/json;charset=utf-8');
+			echo json_encode($data);
+			exit("");
+		}
+
+		/*
 		$username = strtolower($_POST["username"]);
 		$CFUsers = callAPI("http://codeforces.com/api/user.info?handles=" . $username) -> result;
 
@@ -164,6 +192,7 @@
 			echo json_encode($data);
 			exit("");
 		}
+		*/
 
 		// Everything passes :D
 		$uid = generateRandomString();
@@ -187,6 +216,32 @@
 			exit("");
 		}
 
+		// change it to GMOJ check
+		$username = $_POST["username"];
+		$cmd = shell_exec("python check.py " . $username);
+		if(!checkCodeForcesExist($conn,$username)) {
+			$data["success"] = -2;
+			$data["message"] = "The account does not exist!";
+			header('Content-type:application/json;charset=utf-8');
+			echo json_encode($data);
+			exit("");
+		}
+		if($cmd == "Wrong Username\n") {
+			$data["success"] = -4;
+			$data["message"] = "The gmoj account does not exist!";
+			header('Content-type:application/json;charset=utf-8');
+			echo json_encode($data);
+			exit("");
+		}
+
+		if($cmd == "No\n") {
+			$data["success"] = -3;
+			$data["message"] = "The gmoj account's description is not start with 'GMOJ-Rating-verify'";
+			header('Content-type:application/json;charset=utf-8');
+			echo json_encode($data);
+			exit("");
+		}
+		/*
 		$username = strtolower($_POST["username"]);
 
 		if(!checkCodeForcesExist($conn,$username)) {
@@ -217,6 +272,7 @@
 			echo json_encode($data);
 			exit("");
 		}
+		*/
 
 		$uid = getUserId($conn,$_POST["username"]);
 		$data["success"] = 0;
