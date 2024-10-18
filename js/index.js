@@ -106,7 +106,7 @@ function quality2Str(quality,cnt) {
 			res += 'color: rgb(0, 128, 0);';
 		}
 	}
-	res += 'font-weight: 500;" data-toggle="popover" data-content="Number of votes: ' + cnt + '" data-original-title="" title="">' + showQuality + '</td>';
+	res += 'font-weight: 500;" data-toggle="popover" data-content="Number of votes: ' + cnt + '" data-original-title="" title="">' + (quality == 1 ? "💩" : "") + (quality == 2 ? "🤮" : "") + (quality == 3 ? "😎" : "") + (quality == 4 ? "🤩" : "") + (quality == 5 ? "🥳" : "") + showQuality + '</td>';
 	return res;
 }
 
