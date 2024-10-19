@@ -1,7 +1,11 @@
-2024.10.18【省选组】模拟|划分（partition）|https://gmoj.net/senior/#contest/show/4263/0|0
-2024.10.18【省选组】模拟|蛇(snake)|https://gmoj.net/senior/#contest/show/4263/1|0
-2024.10.18【省选组】模拟|lxl题(rmrs)|https://gmoj.net/senior/#contest/show/4263/2|0
-2024.10.18【提高组】模拟|黑白染色（classical）|https://gmoj.net/senior/#contest/show/4262/0|0
-2024.10.18【提高组】模拟|置换群初步（rotate）|https://gmoj.net/senior/#contest/show/4262/1|0
-2024.10.18【提高组】模拟|detection|https://gmoj.net/senior/#contest/show/4262/2|0
-2024.10.18【提高组】模拟|计算（calc）|https://gmoj.net/senior/#contest/show/4262/3|0
+2024.10.19【提高A组】模拟|集合（set）|https://gmoj.net/senior/#contest/show/4264/0|0
+2024.10.19【提高A组】模拟|无可挽回的记忆（memory）|https://gmoj.net/senior/#contest/show/4264/1|0
+2024.10.19【提高A组】模拟|曾有烟花一瞬(firework)|https://gmoj.net/senior/#contest/show/4264/2|0
+2024.10.19【提高A组】模拟|防御塔（defense）|https://gmoj.net/senior/#contest/show/4264/3|0
+2024.10.19【省选组】模拟|夹娃娃（doll）|https://gmoj.net/senior/#contest/show/4265/0|0
+2024.10.19【省选组】模拟|加速度（accel）|https://gmoj.net/senior/#contest/show/4265/1|0
+2024.10.19【省选组】模拟|理论出线（qualify）|https://gmoj.net/senior/#contest/show/4265/2|0
+2024.10.19【提高B组】模拟|Why Did the Cow Cross the Road III|https://gmoj.net/senior/#contest/show/4266/0|0
+2024.10.19【提高B组】模拟|Why Did the Cow Cross the Road|https://gmoj.net/senior/#contest/show/4266/1|0
+2024.10.19【提高B组】模拟|Why Did the Cow Cross the Road II|https://gmoj.net/senior/#contest/show/4266/2|0
+2024.10.19【提高B组】模拟|无可挽回的记忆（memory）|https://gmoj.net/senior/#contest/show/4266/3|0

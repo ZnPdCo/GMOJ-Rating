@@ -17,7 +17,7 @@ function init() {
 		$.post("../backend/data.php",{"type": 2,"id": id},function(res) {
 			if(res[0] == -1) {
 				alert("Your invite link is invalid >.<");
-				window.location.replace("../");
+				window.location.replace("./recovery.html");
 			}
 			udata = res[0];
 			urating = res[1];
@@ -57,12 +57,12 @@ function saveVotes() {
 	if(!id) {
 		alert("D: You need to use your invite link at least once first to activate this page.");
 		window.location.replace("./recovery.html");
-	}else{
+	} else {
 		writeRecord("uid",id,365);
 		$.post("../backend/data.php",{"type": 2,"id": id},function(res) {
 			if(res[0] == -1) {
 				alert("Your invite link is invalid >.<");
-				window.location.replace("../");
+				window.location.replace("./recovery.html");
 			}
 			udata = res[0];
 			urating = res[1];

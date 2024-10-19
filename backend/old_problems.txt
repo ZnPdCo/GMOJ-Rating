@@ -1,0 +1,7 @@
+2024.10.18【省选组】模拟|划分（partition）|https://gmoj.net/senior/#contest/show/4263/0|0
+2024.10.18【省选组】模拟|蛇(snake)|https://gmoj.net/senior/#contest/show/4263/1|0
+2024.10.18【省选组】模拟|lxl题(rmrs)|https://gmoj.net/senior/#contest/show/4263/2|0
+2024.10.18【提高组】模拟|黑白染色（classical）|https://gmoj.net/senior/#contest/show/4262/0|0
+2024.10.18【提高组】模拟|置换群初步（rotate）|https://gmoj.net/senior/#contest/show/4262/1|0
+2024.10.18【提高组】模拟|detection|https://gmoj.net/senior/#contest/show/4262/2|0
+2024.10.18【提高组】模拟|计算（calc）|https://gmoj.net/senior/#contest/show/4262/3|0
