@@ -1,5 +1,5 @@
 2024.10.19【提高A组】模拟|集合（set）|https://gmoj.net/senior/#contest/show/4264/0|0
-2024.10.19【提高A组】模拟|无可挽回的记忆（memory）|https://gmoj.net/senior/#contest/show/4264/1|0
+2024.10.19【提高A组】模拟、2024.10.19【提高B组】模拟|无可挽回的记忆（memory）|https://gmoj.net/senior/#contest/show/4264/1|0
 2024.10.19【提高A组】模拟|曾有烟花一瞬(firework)|https://gmoj.net/senior/#contest/show/4264/2|0
 2024.10.19【提高A组】模拟|防御塔（defense）|https://gmoj.net/senior/#contest/show/4264/3|0
 2024.10.19【省选组】模拟|夹娃娃（doll）|https://gmoj.net/senior/#contest/show/4265/0|0
@@ -8,4 +8,3 @@
 2024.10.19【提高B组】模拟|Why Did the Cow Cross the Road III|https://gmoj.net/senior/#contest/show/4266/0|0
 2024.10.19【提高B组】模拟|Why Did the Cow Cross the Road|https://gmoj.net/senior/#contest/show/4266/1|0
 2024.10.19【提高B组】模拟|Why Did the Cow Cross the Road II|https://gmoj.net/senior/#contest/show/4266/2|0
-2024.10.19【提高B组】模拟|无可挽回的记忆（memory）|https://gmoj.net/senior/#contest/show/4266/3|0
